@@ -1,6 +1,6 @@
 require 'active_record'
 require 'pg'
-require 'lib/jalali_date'
+require_relative 'jalali_date'
 
 class Device < ActiveRecord::Base
 	has_many :sensors, dependent: :destroy
